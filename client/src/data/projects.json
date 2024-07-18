@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "tag": "Hackathon Project",
+        "title": "TikTok Concerts",
+        "collaborators": [],
+        "context": "Developed for the TikTok TechJam 2024 hackathon.",
+        "description": "TikTok Concerts is designed to improve the experience of watching live concerts on TikTok Live. It provides several features to help artists and users connect more easily.",
+        "features": [
+            "Event scheduling: Artists can schedule their live performances and make them publicly available.",
+            "Global events map: A dynamic map showing all schedule events worldwide."
+        ],
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "React",
+            "Tailwind",
+            "MongoDB",
+            "Google Maps API"
+        ],
+        "images": [
+            "/assets/images/tiktok-concerts.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/tiktok-concerts",
+        "liveDemoURL": "https://tiktok-concerts.vercel.app"
+    },
+    {
+        "id": 2,
+        "tag": "School Project",
+        "title": "MySQL CRUD App",
+        "collaborators": [
+            {
+                "name": "Rajpriya Kumawat",
+                "github": "https://github.com/Rajpriyakumawat"
+            }
+        ],
+        "context": "Developed for my Intro to Databases course at Oregon State University.",
+        "description": "AgriChain is a tool that helps with everything in farming, from growing crops to selling them. It makes sure everything works well, tracks where food comes from, and keeps food quality high until it’s sold.\\nFarming has many steps because agriculture products are perishable in nature. AgriChain manages all these parts in one place.\\nWith AgriChain, farmers can keep track of their harvests and inventory. AgriChain efficiently manages operations across 250 farms, overseeing the production processing, sales orders, and deliveries of 30,000 food items weekly to ensure their top quality. Additionally, it facilitates the monthly sale of crops worth $1.5 million, contributing to a more efficient and sustainable agricultural process for all stakeholders. AgriChain provides a centralized platform to manage procurement, production, distribution, and sales processes efficiently.\\nThis system will empower farmers, distributors, retailers, and customers with transparency, accountability, and sustainability throughout the agricultural supply chain.",
+        "technologies": [
+            "JavaScript",
+            "Express",
+            "Handlebars",
+            "CSS",
+            "MySQL"
+        ],
+        "images": [
+            "/assets/images/my_sql_crud_app.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/CRUD-portfolio-project",
+        "liveDemoURL": "https://crud-portfolio-project-a982118c0506.herokuapp.com/"
+    },
+    {
+        "id": 3,
+        "tag": "School Project",
+        "title": "Hashmap Data Structure Implementation",
+        "collaborators": [],
+        "context": "Developed for my Data Structures course at Oregon State University.",
+        "description": "I completed the implementation of a hash map using 2 different methods.\\nThe first method used is separate chaining where linked lists are used for collision resolution and the underlying structure of the hash table is a dynamic array.\\nThe second method used is open addressing with quadratic probing for collision resolution and the underlying structure of the hash table is a dynamic array.",
+        "technologies": [
+            "Python"
+        ],
+        "images": [
+            "/assets/images/quadratic_probing_hashmap.png",
+            "/assets/images/separate_chaining_hashmap.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/HashMap",
+        "liveDemoURL": ""
+    },
+    {
+        "id": 4,
+        "tag": "School Project",
+        "title": "Web Dev Portfolio",
+        "collaborators": [],
+        "context": "Developed for my Web Development course at Oregon State University.",
+        "description": "A full-stack MERN web app with CRUD capabilities.\\nOn the website, there's 2 pages detailing what I learned in the course, and a page where users can view a master playlist. Users can edit, delete, or add songs to the playlist.",
+        "technologies": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Express",
+            "MongoDB",
+            "React"
+        ],
+        "images": [
+            "/assets/images/web_dev_portfolio.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/web-dev-portfolio",
+        "liveDemoURL": "https://peaceful-garden-50865-38f139461e0d.herokuapp.com/"
+    },
+    {
+        "id": 5,
+        "tag": "Hackathon Project",
+        "title": "Playlist Generator",
+        "collaborators": [],
+        "context": "Developed for the RoseHack 2024 hackathon hosted by the Univeristy of California, Riverside.",
+        "description": "Developed a Playlist Generator web application with a Flask backend, enabling efficient music playlist creation and management.\\nUtilized traditional HTML, CSS, and JavaScript to design and implement the frontend, ensuring a seamless and user-friendly interface. Integrated the Spotify API for dynamic music data retrieval, providing users with up-to-date music selections and playlist management capabilities.",
+        "technologies": [
+            "Python",
+            "Flask",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "images": [
+            "/assets/images/playlist_generator.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/playlist-generator",
+        "liveDemoURL": "https://playlist-generator-app-0978b3df1fbd.herokuapp.com/"
+    },
+    {
+        "id": 6,
+        "tag": "School Project",
+        "title": "x86 Assembly IO Procs",
+        "collaborators": [],
+        "context": "Developed for my Computer Architecture and Assembly Language course at Oregon State University.",
+        "description": "This project uses lower-level programming concepts such as memory addressing/management and pointers to convert user-inputted numbers (represented in ASCII) to their literal numerical value and then reconvert these literal numerical values back to ASCII so that they can be outputted to the screen.\\nThe program also calculates the sum and average of the numbers inputted by the user, and displays their value to the output.\\nThis program intentionally incorporates the use of macros to handle getting user input and displaying output.\\nProcedures are used for handling converting the string of ASCII code to a decimal representation, storing these decimal values in an array, and then another procedure handles converting the values in the array back to ASCII code so they can be outputted to the screen.\\nThis code is written in x86 Assembly in MASM syntax meant for the Microsoft assembler.",
+        "technologies": [
+            "x86 Assembly"
+        ],
+        "images": [
+            "/assets/images/get_string_macro.png",
+            "/assets/images/display_string_macro.png",
+            "/assets/images/main_proc.png",
+            "/assets/images/read_val_proc.png",
+            "/assets/images/write_val_proc.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/x86assembly-io-procs",
+        "liveDemoURL": ""
+    }
+]
