@@ -4,104 +4,104 @@
         "category": "Languages",
         "proficiency": "Advanced",
         "projectIDs": [3, 5],
-        "icon": "/assets/icons/python_icon.svg"
+        "icon": "..//assets/icons/python_icon.svg"
     },
     {
         "name": "TypeScript",
         "category": "Languages",
         "proficiency": "Intermediate",
         "projectIDs": [1],
-        "icon": "/assets/icons/typescript_icon.svg"
+        "icon": "../assets/icons/typescript_icon.svg"
     },
     {
         "name": "JavaScript",
         "category": "Languages",
         "proficiency": "Advanced",
         "projectIDs": [2, 4, 5],
-        "icon": "/assets/icons/javascript_icon.svg"
+        "icon": "../assets/icons/javascript_icon.svg"
     },
     {
         "name": "x86 Assembly",
         "category": "Languages",
         "proficiency": "Intermediate",
         "projectIDs": [6],
-        "icon": "/assets/icons/assembly_icon.svg"
+        "icon": "../assets/icons/assembly_icon.svg"
     },
     {
         "name": "SQL",
         "category": "Languages",
         "proficiency": "Intermediate",
         "projectIDs": [2],
-        "icon": "/assets/icons/sql_icon.svg"
+        "icon": "../assets/icons/sql_icon.svg"
     },
     {
         "name": "CSS",
         "category": "Languages",
         "proficiency": "Advanced",
         "projectIDs": [1, 2, 4, 5],
-        "icon": "/assets/icons/css_icon.svg"
+        "icon": "../assets/icons/css_icon.svg"
     },
     {
         "name": "HTML",
         "category": "Languages",
         "proficiency": "Advanced",
         "projectIDs": [1, 2, 4, 5],
-        "icon": "/assets/icons/html_icon.svg"
+        "icon": "../assets/icons/html_icon.svg"
     },
     {
         "name": "Next.js",
         "category": "Frameworks",
         "proficiency": "Intermediate",
         "projectIDs": [1],
-        "icon": "/assets/icons/nextjs_icon.svg"
+        "icon": "../assets/icons/nextjs_icon.svg"
     },
     {
         "name": "Flask",
         "category": "Frameworks",
         "proficiency": "Intermediate",
         "projectIDs": [5],
-        "icon": "/assets/icons/flask_icon.svg"
+        "icon": "../assets/icons/flask_icon.svg"
     },
     {
         "name": "Express",
         "category": "Frameworks",
         "proficiency": "Intermediate",
         "projectIDs": [2, 4],
-        "icon": "/assets/icons/express_icon.svg"
+        "icon": "../assets/icons/express_icon.svg"
     },
     {
         "name": "React",
         "category": "Frameworks",
         "proficiency": "Advanced",
         "projectIDs": [1, 4],
-        "icon": "/assets/icons/react_icon.svg"
+        "icon": "../assets/icons/react_icon.svg"
     },
     {
         "name": "Tailwind",
         "category": "Frameworks",
         "proficiency": "Intermediate",
         "projectIDs": [1],
-        "icon": "/assets/icons/tailwind_icon.svg"
+        "icon": "../assets/icons/tailwind_icon.svg"
     },
     {
         "name": "MongoDB",
         "category": "Databases",
         "proficiency": "Intermediate",
         "projectIDs": [1, 4],
-        "icon": "/assets/icons/mongodb_icon.svg"
+        "icon": "../assets/icons/mongodb_icon.svg"
     },
     {
         "name": "MySQL",
         "category": "Databases",
         "proficiency": "Intermediate",
         "projectIDs": [2],
-        "icon": "/assets/icons/mysql_icon.svg"
+        "icon": "../assets/icons/mysql_icon.svg"
     },
     {
         "name": "Git and GitHub",
         "category": "Tools",
         "proficiency": "Advanced",
         "projectIDs": [1, 2, 3, 4, 5, 6],
-        "icon": "/assets/icons/github_icon.svg"
+        "icon": "../assets/icons/github_icon.svg"
     }
 ]
