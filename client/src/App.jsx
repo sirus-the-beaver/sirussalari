@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/skills' element={<Skills />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/blog' element={<Blog />} />
       </Routes>
     </div>
   )
