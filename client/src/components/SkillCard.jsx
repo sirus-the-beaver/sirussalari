@@ -1,7 +1,9 @@
 import React from 'react';
+import { importAllIcons } from '../utils/importIcons';
 
 const SkillCard = ({ skill, projects }) => {
-    const icon = require(`${skill.icon}`).default;
+    const icons = importAllIcons();
+    const icon = icons[`${skill.icon}`];
 
     return (
         <div className="skill-card">
@@ -9,12 +11,13 @@ const SkillCard = ({ skill, projects }) => {
             <h4>{skill.name}</h4>
             <p><strong>Category:</strong> {skill.category}</p>
             <p><strong>Proficiency:</strong> {skill.proficiency}</p>
-            {projectIDs.length > 0 && (
+            {skill.projectIDs.length > 0 && (
                 <div>
                     <strong>Projects:</strong>
                     <ul>
                         {projects.map(project => (
-                            <li key={project.id}>{project.name}</li>
+                            console.log(project),
+                            <li key={project.id}>{project.title}</li>
                         ))}
                     </ul>
                 </div>

@@ -1,20 +1,20 @@
 import './App.css';
-import axios from 'axios';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
 
-const apiCall = () => {
-  axios.get('http://localhost:4003').then((data) => {
-    console.log(data);
-  })
-}
-
-function App() {
+export default function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <button onClick={apiCall}>Make API Call</button>
-      </header>
+    <div>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
     </div>
   )
 }
-
-export default App
