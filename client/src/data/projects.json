@@ -19,7 +19,7 @@
             "Google Maps API"
         ],
         "images": [
-            "/assets/images/tiktok-concerts.png"
+            "tiktok_concerts.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/tiktok-concerts",
         "liveDemoURL": "https://tiktok-concerts.vercel.app"
@@ -44,7 +44,7 @@
             "MySQL"
         ],
         "images": [
-            "/assets/images/my_sql_crud_app.png"
+            "my_sql_crud_app.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/CRUD-portfolio-project",
         "liveDemoURL": "https://crud-portfolio-project-a982118c0506.herokuapp.com/"
@@ -60,8 +60,8 @@
             "Python"
         ],
         "images": [
-            "/assets/images/quadratic_probing_hashmap.png",
-            "/assets/images/separate_chaining_hashmap.png"
+            "quadratic_probing_hashmap.png",
+            "separate_chaining_hashmap.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/HashMap",
         "liveDemoURL": ""
@@ -82,7 +82,7 @@
             "React"
         ],
         "images": [
-            "/assets/images/web_dev_portfolio.png"
+            "web_dev_portfolio.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/web-dev-portfolio",
         "liveDemoURL": "https://peaceful-garden-50865-38f139461e0d.herokuapp.com/"
@@ -102,7 +102,7 @@
             "CSS"
         ],
         "images": [
-            "/assets/images/playlist_generator.png"
+            "playlist_generator.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/playlist-generator",
         "liveDemoURL": "https://playlist-generator-app-0978b3df1fbd.herokuapp.com/"
@@ -118,11 +118,11 @@
             "x86 Assembly"
         ],
         "images": [
-            "/assets/images/get_string_macro.png",
-            "/assets/images/display_string_macro.png",
-            "/assets/images/main_proc.png",
-            "/assets/images/read_val_proc.png",
-            "/assets/images/write_val_proc.png"
+            "get_string_macro.png",
+            "display_string_macro.png",
+            "main_proc.png",
+            "read_val_proc.png",
+            "write_val_proc.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/x86assembly-io-procs",
         "liveDemoURL": ""
