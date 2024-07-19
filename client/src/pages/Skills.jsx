@@ -22,8 +22,8 @@ export default function Skills () {
     }, []);
 
     return (
-        <div className='skills-page'>
-            <div className='skills-grid'>
+        <div className="flex justify-center">
+            <div className="max-w-4xl w-full">
                 {skills.map((skill) => {
                     const skillProjects = skill.projectIDs.map(projectId => projects.find(project => project.id === projectId));
                     return <SkillCard key={skill.name} skill={skill} projects={skillProjects} />

@@ -8,7 +8,7 @@ const SkillCard = ({ skill, projects }) => {
     return (
         <div className="skill-card">
             <img src={icon} alt={skill.name} />
-            <h4>{skill.name}</h4>
+            <h4 className="text-lg font-bold">{skill.name}</h4>
             <p><strong>Category:</strong> {skill.category}</p>
             <p><strong>Proficiency:</strong> {skill.proficiency}</p>
             {skill.projectIDs.length > 0 && (
@@ -16,7 +16,6 @@ const SkillCard = ({ skill, projects }) => {
                     <strong>Projects:</strong>
                     <ul>
                         {projects.map(project => (
-                            console.log(project),
                             <li key={project.id}>{project.title}</li>
                         ))}
                     </ul>

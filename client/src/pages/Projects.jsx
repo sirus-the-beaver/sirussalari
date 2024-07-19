@@ -18,9 +18,9 @@ export default function Projects() {
     },[]);
 
     return (
-        <div className='projects-page'>
-            <p>Check out some of my projects!</p>
-            <div className='projects-grid'>
+        <div className="container mx-auto">
+            <p className="text-center text-xl font-bold mt-8">Check out some of my projects!</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 {projects.map((project) => {
                     return <ProjectCard key={project.id} project={project} />
                 })}
