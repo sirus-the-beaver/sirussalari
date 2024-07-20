@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import axios from 'axios';
-require('dotenv').config();
+import dotenv from 'dotenv';
 
 const PORT = 4003;
 const app = express();
