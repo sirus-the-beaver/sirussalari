@@ -8,15 +8,16 @@ export default function Chatbot() {
     const sendMessage = async () => {
         if (!message.trim()) return;
 
-        setChat([...chat, { sender: 'user', text: message }]);
+        const userMessage = { sender: 'user', text: message };
+        setChat((prevChat) => [...prevChat, userMessage]);
 
         try {
-            const response = await axios.post('/api/chat', { message });
-            setChat([...chat, { sender: 'user', text: message }, { sender: 'bot', text: response.data.choices[0].text.trim() }]);
+            const response = await axios.post('http://localhost:4008/api/chat', { message });
+            const botMessage = { sender: 'bot', text: response.data.message};
+            setChat((prevChat) => [...prevChat, botMessage]);
         } catch (error) {
             console.error(error);
         }
-
         setMessage('');
     };
 
@@ -24,7 +25,7 @@ export default function Chatbot() {
         <div>
             <div>
                 {chat.map((entry, index) => (
-                    <div key={index} className={`chat-message ${entry.sender}`}>
+                    <div key={index}>
                         {entry.text}
                     </div>
                 ))}
