@@ -12,8 +12,8 @@ export default function Chatbot() {
         setChat((prevChat) => [...prevChat, userMessage]);
 
         try {
-            const response = await axios.post('http://localhost:4008/api/chat', { message });
-            const botMessage = { sender: 'bot', text: response.data.message};
+            const response = await axios.post('http://localhost:4024/api/chat', { query: message });
+            const botMessage = { sender: 'bot', text: response.data.response};
             setChat((prevChat) => [...prevChat, botMessage]);
         } catch (error) {
             console.error(error);
