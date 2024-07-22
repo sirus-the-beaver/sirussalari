@@ -12,7 +12,7 @@ export default function Chatbot() {
         setChat((prevChat) => [...prevChat, userMessage]);
 
         try {
-            const response = await axios.post('http://localhost:4024/api/chat', { query: message });
+            const response = await axios.post('http://localhost:4026/api/chat', { query: message });
             const botMessage = { sender: 'bot', text: response.data.response};
             setChat((prevChat) => [...prevChat, botMessage]);
         } catch (error) {
@@ -22,10 +22,10 @@ export default function Chatbot() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center bg-gray-900 text-white">
             <div className="w-full max-w-md">
                 {chat.map((entry, index) => (
-                    <div key={index} className="bg-gray-200 p-2 mb-2 rounded">
+                    <div key={index} className="bg-gray-800 p-2 mb-2 rounded">
                         {entry.text}
                     </div>
                 ))}
@@ -36,7 +36,7 @@ export default function Chatbot() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-                    className="flex-grow px-2 py-1 border border-gray-300 rounded-l"
+                    className="flex-grow px-2 py-1 border border-gray-300 rounded-l bg-gray-800 text-white"
                 />
                 <button
                     onClick={sendMessage}

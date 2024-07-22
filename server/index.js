@@ -3,7 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import processQuery from './services/chatbot.js';
 
-const PORT = 4024;
+const PORT = 4026;
 const corsOptions = {
     origin: 'http://localhost:5175',
 }

@@ -22,7 +22,7 @@ export default function Skills () {
     }, []);
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-gray-900">
             <div className="max-w-4xl w-full">
                 {skills.map((skill) => {
                     const skillProjects = skill.projectIDs.map(projectId => projects.find(project => project.id === projectId));

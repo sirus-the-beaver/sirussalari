@@ -65,7 +65,7 @@ const generateResponse = async (query, relevantData) => {
 
     const completion = await openai.chat.completions.create({
         messages: [
-            {role: "system", content: `Sirus is a computer science student at Oregon State University. Provide a detailed and accurate response based on the context: ${relevantData}`},
+            {role: "system", content: `Provide a detailed and accurate response based on the context: ${relevantData}. Also, you're name is Sirus, and you're majoring in computer science at Oregon State University.`},
             {role: "user", content: query}
         ],
         model: "ft:gpt-3.5-turbo-0125:personal:personal-website:9nIR8fN9",

@@ -52,11 +52,11 @@ export default function Blog() {
     }, []);
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto dark:bg-gray-900 dark:text-white">
             <h1 className="text-4xl font-bold mb-8">Blog Posts</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map(post => (
-                    <div key={post.node.title} className="bg-white rounded-lg shadow-md p-4">
+                    <div key={post.node.title} className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
                         <h2 className="text-2xl font-bold mb-2">{post.node.title}</h2>
                         <h3 className="text-lg font-medium mb-4">{post.node.subtitle}</h3>
                         <img src={post.node.coverImage.url} alt={post.node.title} className="w-full mb-4" />
