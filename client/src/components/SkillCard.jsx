@@ -6,11 +6,11 @@ const SkillCard = ({ skill, projects }) => {
     const icon = icons[`${skill.icon}`];
 
     return (
-        <div className="skill-card">
-            <img src={icon} alt={skill.name} />
+        <div className="flex flex-col items-center">
+            <img src={icon} alt={skill.name} className="w-16 h-16" />
             <h4 className="text-lg font-bold">{skill.name}</h4>
-            <p><strong>Category:</strong> {skill.category}</p>
-            <p><strong>Proficiency:</strong> {skill.proficiency}</p>
+            <p className="mb-2"><strong>Category:</strong> {skill.category}</p>
+            <p className="mb-2"><strong>Proficiency:</strong> {skill.proficiency}</p>
             {skill.projectIDs.length > 0 && (
                 <div>
                     <strong>Projects:</strong>
