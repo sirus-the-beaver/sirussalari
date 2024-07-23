@@ -24,10 +24,12 @@ export default function Skills () {
     return (
         <div className="flex justify-center bg-gray-900">
             <div className="max-w-4xl w-full">
-                {skills.map((skill) => {
-                    const skillProjects = skill.projectIDs.map(projectId => projects.find(project => project.id === projectId));
-                    return <SkillCard key={skill.name} skill={skill} projects={skillProjects} />
-                })}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {skills.map((skill) => {
+                        const skillProjects = skill.projectIDs.map(projectId => projects.find(project => project.id === projectId));
+                        return <SkillCard key={skill.name} skill={skill} projects={skillProjects} />
+                    })}
+                </div>
             </div>
         </div>
     )

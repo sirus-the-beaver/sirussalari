@@ -11,14 +11,35 @@ const stemmer = natural.PorterStemmer;
 
 const preprocess = (text) => {
     const tokens = tokenizer.tokenize(text.toLowerCase());
-    return tokens.map(token => stemmer.stem(token));
+    return tokens.map(token => stemmer.stem(token)).join(' ');
 }
 
 const calculateSimilarity = (text1, text2) => {
     const vectorizer = new natural.TfIdf();
     vectorizer.addDocument(text1);
     vectorizer.addDocument(text2);
-    return vectorizer.tfidf(text2, 0);
+
+    const docVector1 = vectorizer.documents[0];
+    const docVector2 = vectorizer.documents[1];
+
+    let dotProduct = 0;
+    let magnitude1 = 0;
+    let magnitude2 = 0;
+
+    Object.keys(docVector1).forEach(term => {
+        dotProduct += (docVector1[term] || 0) * (docVector2[term] || 0);
+        magnitude1 += (docVector1[term] || 0) ** 2;
+        magnitude2 += (docVector2[term] || 0) ** 2;
+    });
+
+    magnitude1 = Math.sqrt(magnitude1);
+    magnitude2 = Math.sqrt(magnitude2);
+
+    if (magnitude1 * magnitude2 === 0) {
+        return 0;
+    }
+
+    return dotProduct / (magnitude1 * magnitude2);
 }
 
 const processQuery = async (query) => {
@@ -30,44 +51,50 @@ const processQuery = async (query) => {
 
 const searchJsonData = (query) => {
     const preprocessedQuery = preprocess(query);
+    console.log(`Preprocessed Query: ${preprocessedQuery}`);
 
     let bestMatch = null;
     let highestScore = 0;
-  
-    for (const item of data) {
-      const messages = item.messages;
-      for (let i = 0; i < messages.length; i++) {
-        const message = messages[i];
-        if (message.role === 'user') {
-          const preprocessedMessage = preprocess(message.content);
-          const score = calculateSimilarity(preprocessedQuery.join(' '), preprocessedMessage.join(' '));
-  
-          if (score > highestScore) {
-            highestScore = score;
-            bestMatch = i;
-          }
-        }
-      }
-  
-      if (bestMatch !== null) {
-        const assistantMessage = messages[bestMatch + 1];
+
+    data.forEach((item, itemIndex) => {
+        item.messages.forEach((message, messageIndex) => {
+            if (message.role === 'user') {
+                const preprocessedMessage = preprocess(message.content);
+                const score = calculateSimilarity(preprocessedQuery, preprocessedMessage);
+                console.log(`Score for item ${itemIndex}, message ${messageIndex}: ${score}`);
+                if (score > highestScore) {
+                    highestScore = score;
+                    bestMatch = { item, index: messageIndex };
+                }
+            }
+        });
+    });
+
+    if (bestMatch) {
+        const assistantMessage = bestMatch.item.messages[bestMatch.index + 1];
         if (assistantMessage && assistantMessage.role === 'assistant') {
-          return assistantMessage.content || 'Sorry, I could not find any relevant information.';
+            console.log(`Best Match Found: ${assistantMessage.content}`);
+            return assistantMessage.content;
         }
-      }
     }
-  
-    return 'Sorry, I could not find any relevant information.';
+
+    console.log('No relevant match found');
+    return null;
 };
 
 const generateResponse = async (query, relevantData) => {
-    if (!relevantData) return 'Sorry, I could not find any relevant data.';
+    let messages = [
+        { role: "system", content: "You are a knowledgeable assistant. Use the provided context to answer the user query as accurately as possible." }
+    ];
+
+    if (relevantData) {
+        messages.push({ role: "system", content: `Context: ${relevantData}` });
+    }
+
+    messages.push({ role: "user", content: query });
 
     const completion = await openai.chat.completions.create({
-        messages: [
-            {role: "system", content: `Provide a detailed and accurate response based on the context: ${relevantData}. Also, you're name is Sirus, and you're majoring in computer science at Oregon State University.`},
-            {role: "user", content: query}
-        ],
+        messages: messages,
         model: "ft:gpt-3.5-turbo-0125:personal:personal-website:9nIR8fN9",
     });
 
