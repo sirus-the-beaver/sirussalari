@@ -18,9 +18,9 @@ export default function Projects() {
     },[]);
 
     return (
-        <div className="container mx-auto dark:bg-gray-800">
-            <p className="text-center text-xl font-bold mt-8 dark:text-white">Check out some of my projects!</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+        <div className="flex flex-col dark:bg-gray-900 min-h-screen">
+            <p className="text-center text-xl font-bold mt-4 dark:text-white">Check out some of my projects!</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
                 {projects.map((project) => {
                     return <ProjectCard key={project.id} project={project} />
                 })}

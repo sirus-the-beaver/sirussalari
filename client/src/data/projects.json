@@ -6,10 +6,6 @@
         "collaborators": [],
         "context": "Developed for the TikTok TechJam 2024 hackathon.",
         "description": "TikTok Concerts is designed to improve the experience of watching live concerts on TikTok Live. It provides several features to help artists and users connect more easily.",
-        "features": [
-            "Event scheduling: Artists can schedule their live performances and make them publicly available.",
-            "Global events map: A dynamic map showing all schedule events worldwide."
-        ],
         "technologies": [
             "Next.js",
             "TypeScript",
@@ -60,8 +56,7 @@
             "Python"
         ],
         "images": [
-            "quadratic_probing_hashmap.png",
-            "separate_chaining_hashmap.png"
+            "quadratic_probing_hashmap.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/HashMap",
         "liveDemoURL": ""
@@ -118,11 +113,7 @@
             "x86 Assembly"
         ],
         "images": [
-            "get_string_macro.png",
-            "display_string_macro.png",
-            "main_proc.png",
-            "read_val_proc.png",
-            "write_val_proc.png"
+            "read_val_proc.png"
         ],
         "repoURL": "https://github.com/sirus-the-beaver/x86assembly-io-procs",
         "liveDemoURL": ""
