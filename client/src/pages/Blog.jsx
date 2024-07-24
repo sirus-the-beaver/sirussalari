@@ -3,6 +3,8 @@ import { FcLike, FcSms } from 'react-icons/fc';
 
 export default function Blog() {
     const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -45,17 +47,26 @@ export default function Blog() {
                 if (result.data) {
                     setPosts(result.data.publication.posts.edges);
                 }
+                setLoading(false);
             } catch (error) {
                 console.error(error);
+                setError(error);
+                setLoading(false);
             }
         }
 
         fetchPosts();
     }, []);
 
+    if (loading) return <p className="text-center">Loading...</p>;
+
+    if (error) return <p className="text-center text-red-500">{error.message}</p>;
+
     return (
-        <div className="dark:bg-gray-900 p-4 dark:text-white font-serif">
-            <h1 className="text-4xl font-bold mb-8 text-center">Blog Posts</h1>
+        <section className="dark:bg-gray-900 p-4 dark:text-white font-serif">
+            <header>
+                <h1 className="text-4xl font-bold mb-8 text-center">Blog Posts</h1>
+            </header>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map(post => (
                     <div key={post.node.title} className="flex flex-col justify-between items-center bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
@@ -73,6 +84,6 @@ export default function Blog() {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
