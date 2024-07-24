@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../assets/documents/resume.pdf';
 
 export default function Header () {
     return (
@@ -24,6 +25,9 @@ export default function Header () {
                         </li>
                         <li>
                             <Link to='/contact' className="text-white font-bold hover:text-gray-300" aria-label="Contact page">Contact</Link>
+                        </li>
+                        <li>
+                            <a href={resume} download className="text-white font-bold hover:text-gray-300" aria-label="Download resume">Download Resume</a>
                         </li>
                     </ul>
                 </nav>
