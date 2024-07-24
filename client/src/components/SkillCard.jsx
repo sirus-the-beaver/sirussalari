@@ -12,9 +12,9 @@ const SkillCard = ({ skill, projects }) => {
             <p className="mb-2 text-white"><strong>Category:</strong> {skill.category}</p>
             <p className="mb-2 text-white"><strong>Proficiency:</strong> {skill.proficiency}</p>
             {skill.projectIDs.length > 0 && (
-                <div>
+                <div className="flex flex-col justify-center items-center">
                     <strong className="text-white">Projects:</strong>
-                    <ul>
+                    <ul className="flex flex-col justify-center items-center">
                         {projects.map(project => (
                             <li key={project.id} className="text-white">{project.title}</li>
                         ))}
