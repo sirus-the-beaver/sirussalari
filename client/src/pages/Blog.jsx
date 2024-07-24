@@ -16,9 +16,11 @@ export default function Blog() {
                         query: `
                             query Publication {
                                 publication(host: "scrappedscript.com") {
+                                    id
                                     posts(first: 50) {
                                         edges {
                                             node {
+                                                id
                                                 title
                                                 subtitle
                                                 coverImage {
