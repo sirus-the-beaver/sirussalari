@@ -60,10 +60,12 @@ export default function Chatbot() {
                         onChange={(e) => setMessage(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
                         className="flex-grow px-2 py-1 border border-gray-300 rounded-r bg-gray-800 text-white text-lg"
+                        aria-label="Chat input"
                     />
                     <button
                         onClick={sendMessage}
                         className="px-4 py-1 bg-blue-500 text-white rounded-r"
+                        aria-label="Send message"
                     >
                         <FaArrowAltCircleUp />
                     </button>
