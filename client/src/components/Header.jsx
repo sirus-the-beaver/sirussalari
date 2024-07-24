@@ -11,16 +11,16 @@ export default function Header () {
                     </div>
                     <ul className="flex items-center space-x-4">
                         <li>
-                            <Link to='/about' className="text-white font-bold hover:text-gray-300">About</Link>
+                            <Link to='/about' className="text-white font-bold hover:text-gray-300" aria-label="About page">About</Link>
                         </li>
                         <li>
-                            <Link to='/skills' className="text-white font-bold hover:text-gray-300">Skills</Link>
+                            <Link to='/skills' className="text-white font-bold hover:text-gray-300" aria-label="Skills page">Skills</Link>
                         </li>
                         <li>
-                            <Link to='/projects' className="text-white font-bold hover:text-gray-300">Projects</Link>
+                            <Link to='/projects' className="text-white font-bold hover:text-gray-300" aria-label="Projects page">Projects</Link>
                         </li>
                         <li>
-                            <Link to='/blog' className="text-white font-bold hover:text-gray-300">Blog</Link>
+                            <Link to='/blog' className="text-white font-bold hover:text-gray-300" aria-label="Blog page">Blog</Link>
                         </li>
                     </ul>
                 </nav>
