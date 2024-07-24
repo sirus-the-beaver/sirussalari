@@ -8,22 +8,29 @@ export default function Chatbot() {
     const chatEnd = useRef(null);
 
     const sendMessage = async () => {
+        // Prevent sending empty messages
         if (!message.trim()) return;
 
+        // Add user message to chat
         const userMessage = { sender: 'user', text: message };
         setChat((prevChat) => [...prevChat, userMessage]);
 
         try {
+            // Send user message to chatbot
             const response = await axios.post('http://localhost:4037/api/chat', { query: message });
+
+            // Add chatbot response to chat
             const botMessage = { sender: 'bot', text: response.data.response};
             setChat((prevChat) => [...prevChat, botMessage]);
         } catch (error) {
             console.error(error);
         }
+        // Clear message input
         setMessage('');
     };
 
     useEffect(() => {
+        // Scroll to the end of the chat
         if (chatEnd.current) {
             chatEnd.current.scrollIntoView({ behavior: 'smooth' });
         }
