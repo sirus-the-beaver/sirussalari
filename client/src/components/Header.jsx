@@ -22,6 +22,9 @@ export default function Header () {
                         <li>
                             <Link to='/blog' className="text-white font-bold hover:text-gray-300" aria-label="Blog page">Blog</Link>
                         </li>
+                        <li>
+                            <Link to='/contact' className="text-white font-bold hover:text-gray-300" aria-label="Contact page">Contact</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

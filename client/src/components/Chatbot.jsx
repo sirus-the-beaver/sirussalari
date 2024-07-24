@@ -17,7 +17,7 @@ export default function Chatbot() {
 
         try {
             // Send user message to chatbot
-            const response = await axios.post('http://localhost:4037/api/chat', { query: message });
+            const response = await axios.post('http://localhost:4046/api/chat', { query: message });
 
             // Add chatbot response to chat
             const botMessage = { sender: 'bot', text: response.data.response};
