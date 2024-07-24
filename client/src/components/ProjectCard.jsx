@@ -9,9 +9,11 @@ const ProjectCard = ({ project }) => {
     });
 
     return (
-        <div className="flex flex-col items-center dark:bg-gray-800 p-4">
-            <h3 className="text-2xl font-bold dark:text-white font-serif">{project.title}</h3>
-            <p className="text-gray-500 font-bold dark:text-gray-400 font-serif">{project.tag}</p>
+        <section className="flex flex-col items-center dark:bg-gray-800 p-4">
+            <header className="flex flex-col justify-center items-center">
+                <h3 className="text-2xl font-bold dark:text-white font-serif">{project.title}</h3>
+                <p className="text-gray-500 font-bold dark:text-gray-400 font-serif">{project.tag}</p>
+            </header>
             {project.collaborators.length > 0 && (
                 <ul className="flex mb-4 flex-col">
                     {project.collaborators.map((collaborator, index) => {
@@ -34,7 +36,7 @@ const ProjectCard = ({ project }) => {
                 {project.liveDemoURL && <li><a href={project.liveDemoURL} target='_blank' rel='noreferrer' className="text-blue-500 dark:text-blue-400 font-serif">View Project</a></li>}
                 <li><a href={project.repoURL} target='_blank' rel='noreferrer' className="text-blue-500 dark:text-blue-400 font-serif">GitHub Repo</a></li>
             </ul>
-        </div>
+        </section>
     )
 }
 
