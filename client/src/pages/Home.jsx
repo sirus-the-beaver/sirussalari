@@ -3,7 +3,7 @@ import Chatbot from '../components/Chatbot';
 
 export default function Home() {
     return (
-        <div className="flex flex-col text-white font-serif justify-center items-center dark:bg-gray-900">
+        <section className="flex flex-col text-white font-serif justify-center items-center dark:bg-gray-900">
             <div className="max-w-lg mx-auto p-4">
                 <p className="text-center">Welcome to my portfolio site!</p>
                 <p className="text-center">Below is an AI assistant that I named AISy.</p>
@@ -20,6 +20,6 @@ export default function Home() {
                 <p className="text-center">Dive in and explore the breadth of my technical and creative pursuits!</p>
             </div>
             <Chatbot />
-        </div>
+        </section>
     )
 }
