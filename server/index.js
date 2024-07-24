@@ -5,7 +5,7 @@ import processQuery from './services/chatbot.js';
 
 const PORT = 4037;
 const corsOptions = {
-    origin: 'http://localhost:5177',
+    origin: 'http://localhost:5173',
 }
 const app = express();
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
     return (
-        <div className="flex flex-col items-center dark:bg-gray-900">
+        <div className="flex flex-col items-center h-screen dark:bg-gray-900">
             <h1 className="text-3xl font-bold mb-4 dark:text-white">About Me</h1>
             <div className="flex flex-col md:flex-row items-center">
                 <img className="w-48 h-48 rounded-full mb-4 md:mr-8" src='https://media.licdn.com/dms/image/D4D03AQEED4OAr8EZTQ/profile-displayphoto-shrink_400_400/0/1693712387025?e=1726704000&v=beta&t=xGg3doitMe92HMORyWa12w42pEwqx4ZE91kQhL3FBpI' alt='Sirus Salari' />
