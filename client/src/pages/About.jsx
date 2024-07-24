@@ -6,7 +6,7 @@ export default function About() {
             <h1 className="text-3xl font-bold mb-4 dark:text-white">About Me</h1>
             <div className="flex flex-col md:flex-row items-center">
                 <img className="w-48 h-48 rounded-full mb-4 md:mr-8" src='https://media.licdn.com/dms/image/D4D03AQEED4OAr8EZTQ/profile-displayphoto-shrink_400_400/0/1693712387025?e=1726704000&v=beta&t=xGg3doitMe92HMORyWa12w42pEwqx4ZE91kQhL3FBpI' alt='Sirus Salari' />
-                <div>
+                <div className="font-serif">
                     <p className="mb-4 dark:text-gray-300">
                         I’m a Computer Science student at Oregon State University with a passion for software engineering, music, sneakers, fashion, and cars. As I work towards my B.S. degree, I’m eagerly diving into the world of technology, seeking opportunities to apply my skills in innovative and impactful ways.
                     </p>

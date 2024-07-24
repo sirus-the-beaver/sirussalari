@@ -52,7 +52,7 @@ export default function Blog() {
     }, []);
 
     return (
-        <div className="container mx-auto dark:bg-gray-900 dark:text-white">
+        <div className="container mx-auto dark:bg-gray-900 dark:text-white font-serif">
             <h1 className="text-4xl font-bold mb-8">Blog Posts</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map(post => (

@@ -6,7 +6,7 @@ const SkillCard = ({ skill, projects }) => {
     const icon = icons[`${skill.icon}`];
 
     return (
-        <div className="flex flex-col items-center dark:bg-gray-800">
+        <div className="flex flex-col items-center dark:bg-gray-800 font-serif">
             <img src={icon} alt={skill.name} className="w-16 h-16" />
             <h4 className="text-lg font-bold text-white">{skill.name}</h4>
             <p className="mb-2 text-white"><strong>Category:</strong> {skill.category}</p>
