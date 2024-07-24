@@ -95,7 +95,7 @@ const generateResponse = async (query, relevantData) => {
 
     const completion = await openai.chat.completions.create({
         messages: messages,
-        model: "ft:gpt-3.5-turbo-0125:personal:personal-website:9nIR8fN9",
+        model: `${process.env.MODEL}`,
     });
 
     console.log(completion.choices[0].message.content);
