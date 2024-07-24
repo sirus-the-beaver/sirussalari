@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
+import { FaArrowAltCircleUp } from 'react-icons/fa';
 
 export default function Chatbot() {
     const [message, setMessage] = useState('');
@@ -29,8 +30,8 @@ export default function Chatbot() {
     }, [chat]);
 
     return (
-        <div className="flex flex-col items-center justify-between bg-neutral-900 text-white border border-gray-300 w-full max-w-2xl h-3/4">
-            <h1 className="text-2xl font-bold mb-4">Chatbot</h1>
+        <div className="flex flex-col items-center justify-between bg-neutral-900 text-white border border-gray-300 w-full max-w-2xl h-3/4 mb-4">
+            <h1 className="text-2xl font-bold mb-4">AISy</h1>
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="flex flex-col w-full max-w-2xl h-80 overflow-auto rounded-lg">
                     {chat.map((entry, index) => (
@@ -57,11 +58,11 @@ export default function Chatbot() {
                         onClick={sendMessage}
                         className="px-4 py-1 bg-blue-500 text-white rounded-r"
                     >
-                        Send
+                        <FaArrowAltCircleUp />
                     </button>
                 </div>
             </div>
-            <p className="text-sm text-gray-500 mt-4">Please note that the chatbot may make mistakes or provide inaccurate information.</p>
+            <p className="text-sm text-gray-500">Please note that the chatbot may make mistakes or provide inaccurate information.</p>
         </div>
     );
 };
