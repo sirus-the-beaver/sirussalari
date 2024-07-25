@@ -6,6 +6,7 @@ export default function Chatbot() {
     const [message, setMessage] = useState('');
     const [chat, setChat] = useState([]);
     const chatEnd = useRef(null);
+    const isInitialRender = useRef(false);
 
     const sendMessage = async () => {
         // Prevent sending empty messages
@@ -31,9 +32,12 @@ export default function Chatbot() {
 
     useEffect(() => {
         // Scroll to the end of the chat
-        if (chatEnd.current) {
-            chatEnd.current.scrollIntoView({ behavior: 'smooth' });
+        if (!isInitialRender.current) {
+            chatEnd.current?.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            isInitialRender.current = false;
         }
+
     }, [chat]);
 
     return (
