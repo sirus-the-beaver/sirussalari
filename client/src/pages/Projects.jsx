@@ -31,7 +31,7 @@ export default function Projects() {
             <header>
                 <h1 className="text-4xl mt-4 font-bold mb-8 text-center text-white font-serif">Check out some of my projects!</h1>
             </header>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 p-4">
                 {projects.map((project) => {
                     return <ProjectCard key={project.id} project={project} />
                 })}

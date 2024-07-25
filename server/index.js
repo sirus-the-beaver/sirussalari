@@ -4,6 +4,8 @@ import bodyParser from 'body-parser';
 import processQuery from './services/chatbot.js';
 import dotenv from 'dotenv';
 import rateLimit from 'express-rate-limit';
+import helmet from 'helmet';
+import { body, validationResult } from 'express-validator';
 
 const PORT = process.env.SERVER_PORT;
 const corsOptions = {
@@ -21,6 +23,7 @@ const corsOptions = {
 const app = express();
 
 dotenv.config();
+app.use(helmet());
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -34,17 +37,29 @@ const limiter = rateLimit({
 
 app.use(limiter);
 
-app.post('/api/chat', async (req, res) => {
-    const { query} = req.body;
+app.post('/api/chat', 
+    body('query').isString().notEmpty().withMessage('Query is required.'),
+    async (req, res) => {
+        const errors = validationResult(req);
 
-    if (!query) {
-        return res.status(400).json({ message: 'Query is required.' });
-    }
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
 
-    const response = await processQuery(query);
-    res.send({ response });
+        const { query} = req.body;
+
+        try {
+            const response = await processQuery(query);
+            res.send({ response });
+        } catch (error) {
+            res.status(500).send({ error: error.message });
+        }
 });
 
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
