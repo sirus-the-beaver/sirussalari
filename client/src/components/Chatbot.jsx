@@ -18,7 +18,7 @@ export default function Chatbot() {
 
         try {
             // Send user message to chatbot
-            const response = await axios.post('https://sirussalari.com/api/chat', { query: message });
+            const response = await axios.post('https://sirussalari-64588c64fced.herokuapp.com/api/chat', { query: message });
 
             // Add chatbot response to chat
             const botMessage = { sender: 'bot', text: response.data.response};
