@@ -7,6 +7,7 @@ import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import { body, validationResult } from 'express-validator';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 const PORT = process.env.SERVER_PORT || 5000;
 const corsOptions = {
@@ -61,6 +62,9 @@ app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');
 });
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
