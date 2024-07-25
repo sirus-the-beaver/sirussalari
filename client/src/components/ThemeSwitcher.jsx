@@ -2,24 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
 const ThemeSwitcher = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
-
-    useEffect(() => {
-        const root = window.document.documentElement;
-        const initialColorValue = root.style.getPropertyValue('--initial-color-mode');
-
-        // Check if user has set a preference for dark mode
-        setIsDarkMode(initialColorValue === 'dark');
-    }, []);
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        return localStorage.getItem('theme') === 'dark';
+    });
 
     useEffect(() => {
         const root = window.document.documentElement;
 
         if (isDarkMode) {
             root.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
         } else {
             root.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
         }
+
     }, [isDarkMode]);
 
     const toggleTheme = () => {
