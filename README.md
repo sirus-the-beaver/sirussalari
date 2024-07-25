@@ -6,10 +6,8 @@ Welcome to my personal website repo! This repository contains the code for my pe
 
 - [Technologies](#technologies)
 - [Pages](#pages)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Contribution](#contribution)
 - [License](#license)
+- [Disclaimer](#disclaimer)
 
 ## Technologies
 
