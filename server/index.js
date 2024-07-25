@@ -11,7 +11,7 @@ import path from 'path';
 const PORT = process.env.SERVER_PORT || 5000;
 const corsOptions = {
     origin: function (origin, callback) {
-        const whiteList = ['https://sirussalari.com'];
+        const whiteList = ['https://sirussalari.com', 'https://www.sirussalari.com'];
         if (!origin || whiteList.indexOf(origin) !== -1) {
             callback(null, true);
         } else {
