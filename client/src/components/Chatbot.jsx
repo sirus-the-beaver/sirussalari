@@ -37,41 +37,42 @@ export default function Chatbot() {
     }, [chat]);
 
     return (
-        <div className="flex flex-col items-center justify-between bg-neutral-900 text-white border border-gray-300 w-full max-w-2xl h-3/4 mb-4">
-            <h1 className="text-2xl font-bold mb-4">AISy</h1>
-            <div className="flex flex-col items-center justify-center w-full">
-                <div className="flex flex-col w-full max-w-2xl h-80 overflow-auto rounded-lg">
+        <div className="flex flex-col items-center justify-between bg-neutral-900 text-white border border-gray-700 rounded-lg w-full max-w-2xl h-full shadow-lg p-6 mb-4">
+            <h1 className="text-3xl font-bold mb-4">AISy</h1>
+            <div className="flex flex-col w-full h-full">
+                <div className="flex flex-col w-full h-80 overflow-auto rounded-lg bg-gray-800 p-4 mb-4">
                     {chat.map((entry, index) => (
                         <div
                             key={index}
-                            className={`flex p-2 mb-2 w-1/2 rounded ${entry.sender === 'user' ? 'bg-blue-600 text-white ml-auto' : 'bg-gray-800 text-white mr-auto'}`}
+                            className={`flex mb-2 w-auto max-w-full ${entry.sender === 'user' ? 'justify-end' : 'justify-start'}`}
                         >
-                            <div className={`p-2 rounded max-w-xs`}>
+                            <div className={`p-3 rounded-lg ${entry.sender === 'user' ? 'bg-blue-600 text-white self-end' : 'bg-gray-700 text-white self-start'}`}>
                                 {entry.text}
                             </div>
                         </div>
                     ))}
                     <div ref={chatEnd} />
                 </div>
-                <div className="w-full max-w-2xl flex mb-4">
+                <div className="flex items-center w-full">
                     <input
                         type="text"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-                        className="flex-grow px-2 py-1 border border-gray-300 rounded-r bg-gray-800 text-white text-lg"
+                        className="flex-grow px-4 py-2 border-none rounded-l-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none"
+                        placeholder="Message AISy"
                         aria-label="Chat input"
                     />
                     <button
                         onClick={sendMessage}
-                        className="px-4 py-1 bg-blue-500 text-white rounded-r"
+                        className="px-6 py-3 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 focus:outline-none"
                         aria-label="Send message"
                     >
                         <FaArrowAltCircleUp />
                     </button>
                 </div>
             </div>
-            <p className="text-sm text-gray-500">Please note that the chatbot may make mistakes or provide inaccurate information.</p>
+            <p className="text-sm text-gray-500 mt-4">Please note that AISy can make mistakes or provide inaccurate information.</p>
         </div>
     );
 };
