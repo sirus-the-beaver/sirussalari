@@ -10,23 +10,12 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const PORT = process.env.SERVER_PORT || 5000;
-const corsOptions = {
-    origin: function (origin, callback) {
-        const whiteList = ['https://sirussalari.com', 'https://www.sirussalari.com'];
-        if (!origin || whiteList.indexOf(origin) !== -1) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    methods: ['POST']
-}
 
 const app = express();
 
 dotenv.config();
 app.use(helmet());
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
