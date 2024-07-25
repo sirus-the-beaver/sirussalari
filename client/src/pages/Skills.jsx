@@ -26,17 +26,17 @@ export default function Skills () {
         fetchData();
     }, []);
 
-    if (loading) return <p className="text-center text-white">Loading...</p>;
+    if (loading) return <p className="text-center text-gray-500">Loading...</p>;
 
     if (error) return <p className="text-center text-red-500">Error: {error.message}</p>;
 
     return (
-        <section className="flex justify-center bg-gray-900">
-            <div className="max-w-4xl w-full mt-4 mb-4">
-                <header>
-                    <h1 className="text-4xl font-bold mb-8 text-center font-serif text-white">Skills</h1>
+        <section className="min-h-screen flex justify-center items-center bg-gray-100 dark:bg-gray-900">
+            <div className="container mx-auto py-8 px-4">
+                <header className="text-center mb-8">
+                    <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Skills</h1>
                 </header>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {skills.map((skill) => {
                         const skillProjects = skill.projectIDs.map(projectId => projects.find(project => project.id === projectId));
                         return <SkillCard key={skill.name} skill={skill} projects={skillProjects} />
