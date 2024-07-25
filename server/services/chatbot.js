@@ -81,7 +81,6 @@ const searchJsonData = (query) => {
     if (bestMatch) {
         const assistantMessage = bestMatch.item.messages[bestMatch.index + 1];
         if (assistantMessage && assistantMessage.role === 'assistant') {
-            console.log(`Best Match Found: ${assistantMessage.content}`);
             return assistantMessage.content;
         }
     }

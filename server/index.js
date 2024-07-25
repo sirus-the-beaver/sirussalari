@@ -6,11 +6,12 @@ import dotenv from 'dotenv';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import { body, validationResult } from 'express-validator';
+import path from 'path';
 
-const PORT = process.env.SERVER_PORT;
+const PORT = process.env.SERVER_PORT || 5000;
 const corsOptions = {
     origin: function (origin, callback) {
-        const whiteList = ['http://localhost:5173'];
+        const whiteList = ['https://sirussalari.com'];
         if (!origin || whiteList.indexOf(origin) !== -1) {
             callback(null, true);
         } else {
@@ -59,6 +60,12 @@ app.post('/api/chat',
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');
+});
+
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 
 app.listen(PORT, () => {

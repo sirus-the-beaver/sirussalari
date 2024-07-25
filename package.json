@@ -1,0 +1,16 @@
+{
+  "name": "sirussalari",
+  "version": "1.0.0",
+  "description": "Welcome to my personal website repo! This repository contains the code for my personal site, build with a combination of modern web technologies. The site showcases my projects, skills, blog posts, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
