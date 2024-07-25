@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export default function Chatbot() {
     const [message, setMessage] = useState('');
@@ -18,7 +21,7 @@ export default function Chatbot() {
 
         try {
             // Send user message to chatbot
-            const response = await axios.post('http://localhost:4046/api/chat', { query: message });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}`, { query: message });
 
             // Add chatbot response to chat
             const botMessage = { sender: 'bot', text: response.data.response};
