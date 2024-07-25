@@ -1,6 +1,29 @@
 [
     {
         "id": 1,
+        "tag": "Personal Project",
+        "title": "Personal Website",
+        "collaborators": [],
+        "context": "Developed for my personal use.",
+        "description": "Showcasing a blend of modern web technologies, this personal portfolio website highlights my skills, projects, and achievements in software engineering.\\nThe site features a dynamic and responsive design with a user-friendly interface. Key components include an interactive chatbot powered by advanced NLP techniques, a blog section with insightful posts, and a clean, customizable layout for an optimal user experience.\\nWhether you're exploring my projects, reading my blog, or engaging with my AI assistant, the site reflects my dedication to technology and design.",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "Vite",
+            "Tailwind",
+            "Node.js",
+            "Express",
+            "Hashnode API",
+            "OpenAI API"
+        ],
+        "images": [
+            "personal_website.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/sirussalari",
+        "liveDemoURL": ""
+    },
+    {
+        "id": 2,
         "tag": "Hackathon Project",
         "title": "TikTok Concerts",
         "collaborators": [],
@@ -21,7 +44,7 @@
         "liveDemoURL": "https://tiktok-concerts.vercel.app"
     },
     {
-        "id": 2,
+        "id": 3,
         "tag": "School Project",
         "title": "MySQL CRUD App",
         "collaborators": [
@@ -46,7 +69,7 @@
         "liveDemoURL": "https://crud-portfolio-project-a982118c0506.herokuapp.com/"
     },
     {
-        "id": 3,
+        "id": 4,
         "tag": "School Project",
         "title": "Hashmap Data Structure Implementation",
         "collaborators": [],
@@ -62,7 +85,7 @@
         "liveDemoURL": ""
     },
     {
-        "id": 4,
+        "id": 5,
         "tag": "School Project",
         "title": "Web Dev Portfolio",
         "collaborators": [],
@@ -83,7 +106,7 @@
         "liveDemoURL": "https://peaceful-garden-50865-38f139461e0d.herokuapp.com/"
     },
     {
-        "id": 5,
+        "id": 6,
         "tag": "Hackathon Project",
         "title": "Playlist Generator",
         "collaborators": [],
@@ -103,7 +126,7 @@
         "liveDemoURL": "https://playlist-generator-app-0978b3df1fbd.herokuapp.com/"
     },
     {
-        "id": 6,
+        "id": 7,
         "tag": "School Project",
         "title": "x86 Assembly IO Procs",
         "collaborators": [],

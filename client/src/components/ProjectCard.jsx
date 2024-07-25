@@ -1,6 +1,17 @@
 import React from 'react';
 import { importAllImages } from '../utils/importImages';
 
+function formatText(text) {
+    return text.split('\\n').map((item, key) => (
+        <React.Fragment key={key}>
+            {item}
+            <br />
+            <br />
+        </React.Fragment>
+    ))
+}
+
+
 const ProjectCard = ({ project }) => {
     const allImages = importAllImages();
     const images = [];
@@ -23,7 +34,7 @@ const ProjectCard = ({ project }) => {
             )}
             <div className="w-full max-h-48 mb-4 rounded-lg overflow-y-scroll border border-gray-200 dark:border-gray-700">
                 <p className="text-gray-700 dark:text-gray-300 p-4 font-serif">{project.context}</p>
-                <p className="text-gray-700 p-4 dark:text-gray-300 font-serif">{project.description}</p>
+                <p className="text-gray-700 p-4 dark:text-gray-300 font-serif">{formatText(project.description)}</p>
             </div>
             <p className="text-gray-700 mb-4 dark:text-gray-300 font-serif"><strong>Technologies:</strong> {project.technologies.join(' | ')}</p>
             <ul className="flex justify-center space-x-4 mb-4">
