@@ -29,7 +29,6 @@ export default function Header() {
             <div className="container mx-auto">
                 <nav className="flex items-center justify-between py-4 px-6 md:px-0">
                     <div className="flex items-center justify-between w-full md:w-auto">
-                        <Link to='/' className="text-white text-2xl font-bold">Home</Link>
                         <button onClick={toggleMenu} className="md:hidden text-white" aria-label="Menu button">
                             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                         </button>

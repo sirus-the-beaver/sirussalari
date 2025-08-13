@@ -1,4 +1,4 @@
-export const importAllIcons = (requireContext) => {
+export const importAllIcons = () => {
     const icons = import.meta.glob('../assets/icons/*.svg', { eager: true});
     const formattedIcons = {};
     

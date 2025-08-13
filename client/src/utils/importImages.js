@@ -1,4 +1,4 @@
-export const importAllImages = (requireContext) => {
+export const importAllImages = () => {
     const images = import.meta.glob('../assets/images/*.png', { eager: true});
     const formattedImages = {};
 
