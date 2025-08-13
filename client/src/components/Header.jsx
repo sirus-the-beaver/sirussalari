@@ -42,7 +42,7 @@ export default function Header() {
                         </div>
                         <ul className="flex flex-col items-center space-y-4 mt-8">
                             <li>
-                                <Link to='/about' onClick={toggleMenu} className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="About page">About</Link>
+                                <Link to='/' onClick={toggleMenu} className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="About page">About</Link>
                             </li>
                             <li>
                                 <Link to='/skills' onClick={toggleMenu} className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="Skills page">Skills</Link>

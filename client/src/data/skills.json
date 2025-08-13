@@ -98,6 +98,13 @@
         "icon": "mysql_icon.svg"
     },
     {
+        "name": "Authentication with JWT",
+        "category": "Security",
+        "proficiency": "Intermediate",
+        "projectIDs": [],
+        "icon": "jwt_icon.svg"
+    },
+    {
         "name": "Git and GitHub",
         "category": "Tools",
         "proficiency": "Advanced",
