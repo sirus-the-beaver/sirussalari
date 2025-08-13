@@ -67,7 +67,7 @@ export default function Header() {
 
                     <ul className="hidden md:flex md:flex-row md:items-center md:space-x-4">
                         <li>
-                            <Link to='/about' className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="About page">About</Link>
+                            <Link to='/' className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="About page">About</Link>
                         </li>
                         <li>
                             <Link to='/skills' className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="Skills page">Skills</Link>

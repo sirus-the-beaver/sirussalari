@@ -30,7 +30,6 @@ export default function Projects() {
         <section className="flex flex-col items-center min-h-screen py-8 px-4 dark:bg-gray-900 bg-gray-100">
             <header>
                 <h1 className="text-4xl font-extrabold mb-8 text-center text-gray-900 dark:text-white">My Projects</h1>
-                <p className="text-center text-lg text-gray-700 dark:text-gray-300">Explore some of the projects I've worked on, showcasing my skills and creativity.</p>
             </header>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                 {projects.map((project) => {

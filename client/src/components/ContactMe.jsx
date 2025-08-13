@@ -7,7 +7,6 @@ export default function ContactMe() {
         <section className="flex flex-col items-center min-h-screen p-6 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-serif">
             <header className="mb-8 text-center">
                 <h1 className="text-3xl font-extrabold text-gray-800 dark:text-gray-200">Contact Me</h1>
-                <p className="text-lg text-gray-600 dark:text-gray-400">I'd love to hear from you! Feel free to reach out via the channels below.</p>
             </header>
             <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-lg">
                 <ul className="space-y-6">
