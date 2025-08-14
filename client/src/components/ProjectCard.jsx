@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
     });
 
     return (
-        <section className="flex flex-col items-center dark:bg-gray-800 p-6 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+        <section className="flex flex-col items-center dark:bg-gray-800 p-6 bg-white rounded-lg shadow-lg w-auto md:w-1/2">
             <header className="text-center mb-4">
                 <h3 className="text-3xl font-bold text-gray-900 dark:text-white font-serif mb-2">{project.title}</h3>
                 <p className="text-lg text-gray-600 dark:text-gray-400 font-serif">{project.tag}</p>

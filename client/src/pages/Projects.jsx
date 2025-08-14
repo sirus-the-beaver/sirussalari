@@ -28,7 +28,10 @@ export default function Projects() {
 
     return (
         <section className="flex flex-col items-center min-h-screen py-8 px-4 dark:bg-gray-900 bg-gray-100">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <header className="text-center mb-8">
+                <h1 className="text-3xl font-bold text-gray-900 dark:text-white font-serif">Projects</h1>
+            </header>
+            <div className="flex flex-col gap-10 mt-8 items-center">
                 {projects.map((project) => {
                     return <ProjectCard key={project.id} project={project} />
                 })}
