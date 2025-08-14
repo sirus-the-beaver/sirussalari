@@ -48,26 +48,6 @@
         "liveDemoURL": ""
     },
     {
-        "id": 6,
-        "tag": "Hackathon Project",
-        "title": "Playlist Generator",
-        "collaborators": [],
-        "context": "Developed for the RoseHack 2024 hackathon hosted by the Univeristy of California, Riverside.",
-        "description": "Developed a Playlist Generator web application with a Flask backend, enabling efficient music playlist creation and management.\\nUtilized traditional HTML, CSS, and JavaScript to design and implement the frontend, ensuring a seamless and user-friendly interface. Integrated the Spotify API for dynamic music data retrieval, providing users with up-to-date music selections and playlist management capabilities.",
-        "technologies": [
-            "Python",
-            "Flask",
-            "JavaScript",
-            "HTML",
-            "CSS"
-        ],
-        "images": [
-            "playlist_generator.png"
-        ],
-        "repoURL": "https://github.com/sirus-the-beaver/playlist-generator",
-        "liveDemoURL": "https://playlist-generator-app-0978b3df1fbd.herokuapp.com/"
-    },
-    {
         "id": 7,
         "tag": "School Project",
         "title": "x86 Assembly IO Procs",

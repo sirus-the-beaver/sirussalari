@@ -3,14 +3,14 @@
         "name": "Python",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [4, 6],
+        "projectIDs": [4],
         "icon": "python_icon.svg"
     },
     {
         "name": "JavaScript",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1, 6],
+        "projectIDs": [1],
         "icon": "javascript_icon.svg"
     },
     {
@@ -31,22 +31,15 @@
         "name": "CSS",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1, 6],
+        "projectIDs": [1],
         "icon": "css_icon.svg"
     },
     {
         "name": "HTML",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1, 6],
+        "projectIDs": [1],
         "icon": "html_icon.svg"
-    },
-    {
-        "name": "Flask",
-        "category": "Frameworks",
-        "proficiency": "Intermediate",
-        "projectIDs": [6],
-        "icon": "flask_icon.svg"
     },
     {
         "name": "Express",
@@ -94,7 +87,7 @@
         "name": "Git and GitHub",
         "category": "Tools",
         "proficiency": "Advanced",
-        "projectIDs": [1, 4, 6, 7],
+        "projectIDs": [1, 4, 7],
         "icon": "github_icon.svg"
     }
 ]
