@@ -1,5 +1,37 @@
 [
     {
+        "id": 1,
+        "tag": "School Project",
+        "title": "Job Tracker",
+        "collaborators": [
+            {
+                "name": "Thomas Murray",
+                "github": "https://github.com/tmurr"
+            },
+            {
+                "name": "Chengjie Shen",
+                "github": "https://github.com/scjshen"
+            }
+        ],
+        "context": "Developed for my Capstone Project course at Oregon State University.",
+        "description": "Job Tracker is a web application designed to help users manage their job search process. It allows users to track job applications, their skills, and contacts.\\nThe application features a user-friendly interface with a dashboard that displays the status of each job application, and a skills dashboard to track how often skills are mentioned in applications.",
+        "technologies": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Express",
+            "MySQL",
+            "React",
+            "Tailwind",
+            "JWT"
+        ],
+        "images": [
+            "job_tracker.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/job-tracker",
+        "liveDemoURL": "https://job-tracker-steel-kappa.vercel.app/login"
+    },
+    {
         "id": 2,
         "tag": "Hackathon Project",
         "title": "TikTok Concerts",
