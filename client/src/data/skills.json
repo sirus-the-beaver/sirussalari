@@ -14,13 +14,6 @@
         "icon": "javascript_icon.svg"
     },
     {
-        "name": "SQL",
-        "category": "Languages",
-        "proficiency": "Intermediate",
-        "projectIDs": [1],
-        "icon": "sql_icon.svg"
-    },
-    {
         "name": "CSS",
         "category": "Languages",
         "proficiency": "Advanced",
