@@ -1,28 +1,5 @@
 [
     {
-        "id": 1,
-        "tag": "Personal Project",
-        "title": "Personal Website",
-        "collaborators": [],
-        "context": "Developed for my personal use.",
-        "description": "Showcasing a blend of modern web technologies, this personal portfolio website highlights my skills, projects, and achievements in software engineering.\\nThe site features a dynamic and responsive design with a user-friendly interface. Key components include an interactive chatbot powered by advanced NLP techniques, a blog section with insightful posts, and a clean, customizable layout for an optimal user experience.\\nWhether you're exploring my projects, reading my blog, or engaging with my AI assistant, the site reflects my dedication to technology and design.",
-        "technologies": [
-            "React",
-            "JavaScript",
-            "Vite",
-            "Tailwind",
-            "Node.js",
-            "Express",
-            "Hashnode API",
-            "OpenAI API"
-        ],
-        "images": [
-            "personal_website.png"
-        ],
-        "repoURL": "https://github.com/sirus-the-beaver/sirussalari",
-        "liveDemoURL": ""
-    },
-    {
         "id": 2,
         "tag": "Hackathon Project",
         "title": "TikTok Concerts",
