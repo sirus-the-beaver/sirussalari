@@ -46,21 +46,5 @@
         ],
         "repoURL": "https://github.com/sirus-the-beaver/HashMap",
         "liveDemoURL": ""
-    },
-    {
-        "id": 7,
-        "tag": "School Project",
-        "title": "x86 Assembly IO Procs",
-        "collaborators": [],
-        "context": "Developed for my Computer Architecture and Assembly Language course at Oregon State University.",
-        "description": "This project uses lower-level programming concepts such as memory addressing/management and pointers to convert user-inputted numbers (represented in ASCII) to their literal numerical value and then reconvert these literal numerical values back to ASCII so that they can be outputted to the screen.\\nThe program also calculates the sum and average of the numbers inputted by the user, and displays their value to the output.\\nThis program intentionally incorporates the use of macros to handle getting user input and displaying output.\\nProcedures are used for handling converting the string of ASCII code to a decimal representation, storing these decimal values in an array, and then another procedure handles converting the values in the array back to ASCII code so they can be outputted to the screen.\\nThis code is written in x86 Assembly in MASM syntax meant for the Microsoft assembler.",
-        "technologies": [
-            "x86 Assembly"
-        ],
-        "images": [
-            "read_val_proc.png"
-        ],
-        "repoURL": "https://github.com/sirus-the-beaver/x86assembly-io-procs",
-        "liveDemoURL": ""
     }
 ]
