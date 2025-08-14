@@ -7,13 +7,6 @@
         "icon": "python_icon.svg"
     },
     {
-        "name": "TypeScript",
-        "category": "Languages",
-        "proficiency": "Intermediate",
-        "projectIDs": [2],
-        "icon": "typescript_icon.svg"
-    },
-    {
         "name": "JavaScript",
         "category": "Languages",
         "proficiency": "Advanced",
@@ -38,22 +31,15 @@
         "name": "CSS",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1, 2, 6],
+        "projectIDs": [1, 6],
         "icon": "css_icon.svg"
     },
     {
         "name": "HTML",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1, 2, 6],
+        "projectIDs": [1, 6],
         "icon": "html_icon.svg"
-    },
-    {
-        "name": "Next.js",
-        "category": "Frameworks",
-        "proficiency": "Intermediate",
-        "projectIDs": [2],
-        "icon": "nextjs_icon.svg"
     },
     {
         "name": "Flask",
@@ -73,21 +59,21 @@
         "name": "React",
         "category": "Frameworks",
         "proficiency": "Advanced",
-        "projectIDs": [1, 2],
+        "projectIDs": [1],
         "icon": "react_icon.svg"
     },
     {
         "name": "Tailwind",
         "category": "Frameworks",
         "proficiency": "Intermediate",
-        "projectIDs": [1, 2],
+        "projectIDs": [1],
         "icon": "tailwind_icon.svg"
     },
     {
         "name": "MongoDB",
         "category": "Databases",
         "proficiency": "Intermediate",
-        "projectIDs": [2],
+        "projectIDs": [],
         "icon": "mongodb_icon.svg"
     },
     {
@@ -108,7 +94,7 @@
         "name": "Git and GitHub",
         "category": "Tools",
         "proficiency": "Advanced",
-        "projectIDs": [1, 2, 4, 6, 7],
+        "projectIDs": [1, 4, 6, 7],
         "icon": "github_icon.svg"
     }
 ]

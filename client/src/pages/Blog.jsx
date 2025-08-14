@@ -64,10 +64,6 @@ export default function Blog() {
 
     return (
         <section className="min-h-screen py-8 px-4 dark:bg-gray-900 bg-gray-100 font-serif">
-            <header>
-                <h1 className="text-4xl font-extrabold mb-8 text-center text-gray-900 dark:text-white">Blog Posts</h1>
-                <p className="text-center text-lg text-gray-700 dark:text-gray-300">Explore my latest thoughts and insights on software engineering and technology.</p>
-            </header>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 {posts.map(post => (
                     <div key={post.node.id} className="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden p-2">

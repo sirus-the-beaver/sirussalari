@@ -32,27 +32,6 @@
         "liveDemoURL": "https://job-tracker-steel-kappa.vercel.app/login"
     },
     {
-        "id": 2,
-        "tag": "Hackathon Project",
-        "title": "TikTok Concerts",
-        "collaborators": [],
-        "context": "Developed for the TikTok TechJam 2024 hackathon.",
-        "description": "TikTok Concerts is designed to improve the experience of watching live concerts on TikTok Live. It provides several features to help artists and users connect more easily.",
-        "technologies": [
-            "Next.js",
-            "TypeScript",
-            "React",
-            "Tailwind",
-            "MongoDB",
-            "Google Maps API"
-        ],
-        "images": [
-            "tiktok_concerts.png"
-        ],
-        "repoURL": "https://github.com/sirus-the-beaver/tiktok-concerts",
-        "liveDemoURL": "https://tiktok-concerts.vercel.app"
-    },
-    {
         "id": 4,
         "tag": "School Project",
         "title": "Hashmap Data Structure Implementation",
