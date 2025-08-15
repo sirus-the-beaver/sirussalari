@@ -32,6 +32,29 @@
         "liveDemoURL": "https://job-tracker-steel-kappa.vercel.app/login"
     },
     {
+        "id": 2,
+        "tag": "School Project",
+        "title": "DishFindr",
+        "collaborators": [],
+        "context": "Developed for my Software Engineering course at Oregon State University.",
+        "description": "DishFindr is a web application that allows users to search for recipes based on ingredients they have at home. It provides a user-friendly interface to input ingredients and find matching recipes using the Spoonacular API.\\nDishFindr uses a microservices architecture that uses REST APIs to communicate between the main application and three microservices: user-preferences microservice, recipe recommendation microservice, and wine recommendation microservice.",
+        "technologies": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Express",
+            "MongoDB",
+            "React",
+            "Tailwind",
+            "JWT"
+        ],
+        "images": [
+            "dish_findr.png"
+        ],
+        "repoURL": "https://github.com/sirus-the-beaver/CS361-main-program",
+        "liveDemoURL": "https://dishfindr-4d3c3b6f3b94.herokuapp.com/signup"
+    },
+    {
         "id": 4,
         "tag": "School Project",
         "title": "Hashmap Data Structure Implementation",

@@ -10,49 +10,49 @@
         "name": "JavaScript",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1],
+        "projectIDs": [1, 2],
         "icon": "javascript_icon.svg"
     },
     {
         "name": "CSS",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1],
+        "projectIDs": [1, 2],
         "icon": "css_icon.svg"
     },
     {
         "name": "HTML",
         "category": "Languages",
         "proficiency": "Advanced",
-        "projectIDs": [1],
+        "projectIDs": [1, 2],
         "icon": "html_icon.svg"
     },
     {
         "name": "Express",
         "category": "Frameworks",
         "proficiency": "Intermediate",
-        "projectIDs": [1],
+        "projectIDs": [1, 2],
         "icon": "express_icon.svg"
     },
     {
         "name": "React",
         "category": "Frameworks",
         "proficiency": "Advanced",
-        "projectIDs": [1],
+        "projectIDs": [1, 2],
         "icon": "react_icon.svg"
     },
     {
         "name": "Tailwind",
         "category": "Frameworks",
         "proficiency": "Intermediate",
-        "projectIDs": [1],
+        "projectIDs": [1, 2],
         "icon": "tailwind_icon.svg"
     },
     {
         "name": "MongoDB",
         "category": "Databases",
         "proficiency": "Intermediate",
-        "projectIDs": [],
+        "projectIDs": [2],
         "icon": "mongodb_icon.svg"
     },
     {
@@ -66,14 +66,14 @@
         "name": "Authentication with JWT",
         "category": "Security",
         "proficiency": "Intermediate",
-        "projectIDs": [1],
+        "projectIDs": [1, 2],
         "icon": "jwt_icon.svg"
     },
     {
         "name": "Git and GitHub",
         "category": "Tools",
         "proficiency": "Advanced",
-        "projectIDs": [1, 4],
+        "projectIDs": [1, 2, 4],
         "icon": "github_icon.svg"
     }
 ]
