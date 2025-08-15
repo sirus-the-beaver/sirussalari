@@ -12,7 +12,6 @@ const SkillCard = ({ skill, projects }) => {
                 <h4 className="text-xl font-semibold">{skill.name}</h4>
             </header>
             <p className="mb-2"><strong>Category:</strong> {skill.category}</p>
-            <p className="mb-2 text-sm"><strong>Proficiency:</strong> {skill.proficiency}</p>
             {skill.projectIDs.length > 0 && (
                 <div className="w-full text-center">
                     <strong>Projects:</strong>
