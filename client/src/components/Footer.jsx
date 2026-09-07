@@ -15,9 +15,6 @@ export default function Footer () {
                     <a href='https://github.com/sirus-the-beaver' target='_blank' rel='noopener noreferrer' className="hover:text-gray-400 transition-colors duration-300" aria-label="GitHub">
                         <FaGithub size={24} />
                     </a>
-                    <a href='https://scrappedscript.com/' target='_blank' rel='noopener noreferrer' className="hover:text-yellow-500 transition-colors duration-300" aria-label="Blog">
-                        <FaBlog size={24} />
-                    </a>
                 </div>
             </div>
         </footer>

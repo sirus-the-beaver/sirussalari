@@ -51,9 +51,6 @@ export default function Header() {
                                 <Link to='/projects' onClick={toggleMenu} className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="Projects page">Projects</Link>
                             </li>
                             <li>
-                                <Link to='/blog' onClick={toggleMenu} className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="Blog page">Blog</Link>
-                            </li>
-                            <li>
                                 <Link to='/contact' onClick={toggleMenu} className="text-white font-semibold hover:text-gray-300 transition duration-300" aria-label="Contact page">Contact</Link>
                             </li>
                             <li>

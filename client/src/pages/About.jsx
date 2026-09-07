@@ -15,10 +15,8 @@ export default function About() {
                         I have a B.S. in Computer Science from Oregon State University, and a B.A. in Psychology from the University of California, Irvine.
                     </p>
                     <p>
-                        My ultimate goal is to become a full-time software engineer, contributing to projects that make a difference. I’m particularly interested in backend development, where I can leverage my skills in Python, JavaScript, and various frameworks to build robust applications.
-                    </p>
-                    <p>
-                        Outside of coding, you’ll find me exploring the latest trends in fashion and sneakers, staying updated with the automotive world, or unwinding with some music. These interests not only fuel my creativity but also help me maintain a balanced and dynamic lifestyle.
+                        I have extensive knowledge in building web applications using various technologies, including React, Node.js, Express, and MongoDB. I have experience in developing both front-end and back-end components of web applications, as well as integrating third-party APIs and services.
+                        I am passionate about creating user-friendly and responsive web applications that provide a seamless user experience. I am also interested in exploring new technologies and frameworks to enhance my skills and stay up-to-date with the latest trends in web development.
                     </p>
                 </div>
             </div>
