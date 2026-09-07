@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePicture from '../assets/images/sirus_salari.jpeg';
 
 export default function About() {
     return (
@@ -7,7 +8,7 @@ export default function About() {
                 <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white">Sirus Salari</h1>
             </header>
             <div className="flex flex-col items-center">
-                <img className="w-48 h-48 rounded-full md:mr-8" src="../assets/images/sirus_salari.jpeg" alt='Sirus Salari' />
+                <img src={profilePicture} alt="Sirus Salari" className="w-48 h-48 rounded-full mb-6 shadow-lg" />
                 <div className="flex flex-col space-y-6 text-lg leading-relaxed">
                     <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white">About Me</h1>
                     <p>
