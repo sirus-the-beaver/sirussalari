@@ -7,7 +7,7 @@ export default function About() {
                 <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white">Sirus Salari</h1>
             </header>
             <div className="flex flex-col items-center">
-                <img className="w-48 h-48 rounded-full md:mr-8" src='https://media.licdn.com/dms/image/v2/D4D03AQEED4OAr8EZTQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693712387025?e=1758153600&v=beta&t=ufvEWBPT4tysigdBhIR0GOSzwB8cznarwNS74Inh2oM' alt='Sirus Salari' />
+                <img className="w-48 h-48 rounded-full md:mr-8" src="../assets/images/sirus_salari.jpeg" alt='Sirus Salari' />
                 <div className="flex flex-col space-y-6 text-lg leading-relaxed">
                     <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white">About Me</h1>
                     <p>
